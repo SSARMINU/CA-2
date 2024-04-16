@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-image: url('secondary-daily-thumb2x.jpg'); /* Path to your local image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.7); /* Optional: Add a semi-transparent white background to improve readability */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            font-size: 50px;
+        }
+        p {
+            color: #666;
+            line-height: 1.5;
+        }
+        button {
+            display: block;
+            margin: 20px auto 0;
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .made-by {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+        }
+        .made-by {
+            text-align: center;
+            margin-top: 20px;
+            color: black;
+            font-weight: bold; /* Make the text bold */
+            font-size: 24px; /* Increase the font size */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Instructions</h1>
+        <p>Welcome to our website! Here are some instructions:</p>
+        <ol>
+            <li>Objective: Fill a 9x9 grid with numbers from 1 to 9, ensuring each row, column, and 3x3 subgrid contains all digits without repetition.</li>
+            <li>Starting Grid: Begin with some cells pre-filled; these numbers cannot be changed.</li>
+            <li>Rules: Each row, column, and subgrid must contain all numbers 1-9 without repeating any.</li>
+            <li>How to Play: Use logic to deduce the correct numbers for each empty cell, starting with obvious placements and progressing methodically.</li>
+            <li>Enjoy: Sudoku is a challenging game of logic and deduction; take your time and have fun solving the puzzle!</li>
+        </ol>
+        <button id="play-button">Play Sudoku</button>
+        <p class="made-by">BY SAM BASIL FERNAND S</p> <!-- Added paragraph for "MADE BY SAM BASIL FERNAND S" -->
+    </div>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var playButton = document.getElementById("play-button");
+
+        playButton.addEventListener("click", function() {
+            window.location.href = "sudoku.html";
+        });
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+html, body {
+    height: 100%; /* Ensure the body takes up the full height of the viewport */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox layout for centering */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    background-image: linear-gradient(180deg, dodgerblue, #267ADD); 
+}
+
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 920px; /* Set the width of the grid including borders and gaps */
+    border: 1px solid #000; /* Add border around the grid */
+    background-color: white /* Set background color to ocean blue */
+}
+
+.board > div {
+    box-sizing: border-box;
+    width: 100px; /* Adjust cell size as needed */
+    height: 100px; /* Adjust cell size as needed */
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 100px; /* Vertically center the text */
+    font-size: 100px; /* Adjust font size as needed */
+    color: black /* Set text color to white */
+}
+
+.board > div:nth-child(3n) {
+    border-right: 3px solid #000;
+}
+
+.board > div:nth-child(n + 73) {
+    border-bottom: 3px solid #000;
+}
+#timer {
+    width: 10%;
+    position: absolute;
+    top: 5vh;
+    right: 5vh;
+    font-size: 6vw;
+   
+}

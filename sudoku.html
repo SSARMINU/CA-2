@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="sudoku-board" class="board">
+        <!-- Cells will be dynamically generated here -->
+    </div>
+    <div id="timer" class="timer">00:00</div>
+    <button onclick="submitSudoku()" style="font-size: 16px; padding: 10px 20px;">Submit</button>
+<button onclick="generateAndSolveSudoku()" style="font-size: 16px; padding: 10px 20px;">Refresh</button>
+<audio id="submitSound">
+    <source src="mixkit-failure-arcade-alert-notification-240.mp3" type="audio/mpeg">
+    
+</audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
