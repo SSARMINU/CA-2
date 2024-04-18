@@ -18,11 +18,11 @@ html, body {
 .board > div {
     box-sizing: border-box;
     width: 100px; /* Adjust cell size as needed */
-    height: 100px; /* Adjust cell size as needed */
+    height: 90px; /* Adjust cell size as needed */
     border: 1px solid #000;
     text-align: center;
     line-height: 100px; /* Vertically center the text */
-    font-size: 100px; /* Adjust font size as needed */
+    font-size: 50px; /* Adjust font size as needed */
     color: black /* Set text color to white */
 }
 
